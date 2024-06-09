@@ -1,5 +1,18 @@
 # Workshop Testing in Rust
 
+This is a workshop about testing in Rust. It is intended for people who are already a bit familiar with Rust and want to learn more about testing in Rust.
+
+## Prerequisites
+
+- Basic knowledge of Rust.
+- A working Rust installation. (See https://rustup.rs/)
+- A working Rust IDE (e.g. Visual Studio Code with the Rust extension)
+  or an editor.
+
+## Slides
+
+Please see the file `Rust Testing Workshop.pdf` in this repository.
+
 ## Exercises
 
 Go to the `src/exercises` module and follow the instructions there.
