@@ -12,6 +12,9 @@ pub mod prime;
 /// Part 2 about integration testing.
 mod repository;
 
+/// Exercises for learning about testing.
+mod exercises;
+
 pub use repository::user_repository::UserRepository;
 
 #[derive(Debug, PartialEq)]

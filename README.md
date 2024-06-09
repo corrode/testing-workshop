@@ -1,5 +1,11 @@
 # Workshop Testing in Rust
 
+## Exercises
+
+Go to the `src/exercises` module and follow the instructions there.
+
+## Workshop Topics
+
 This workshop is about testing in Rust. We will cover the following topics:
 
 - Writing unit tests in the same file as the code
@@ -11,18 +17,30 @@ This workshop is about testing in Rust. We will cover the following topics:
 - Test doubles
   - Mocks
   - Traits
-- Test isolation
-  - Isolating external dependencies
-  - Isolating the filesystem
 - Tips and tricks
-  - Testing panics `#[should_panic]`
+  - You can return `Result` from tests
   - `#[ignore]` attribute
-  - `#[cfg(test)]` for convenience methodsd
-  - Testing async code
+  - Testing panics `#[should_panic]`
+  - `#[cfg(test)]` for convenience methods
+- Test isolation
+  - Isolating the filesystem: `tempdir`
+  - Isolating the network: HTTP mocking
+  - Isolating external dependencies: `mockall`
+- Speeding up tests
+  - Unit tests over integration tests
+  - Faster integration tests: use a single compilation unit
+  - cargo test runs tests in parallel
+  - cargo nextest
+  - sequential tests with `--test-threads=1` or https://crates.io/crates/serial_test
 - Exploratory testing
   - Property-based testing
   - Mutation testing
-- Testing frameworks and tools
+- Testing async code with `#[tokio::test]`
+- Benchmark tests
+- Structuring code for better testing
+  Onion Architecture / Hexagonal Architecture
+- Test coverage
+- Notable frameworks and libraries
   - cargo nextest
   - rstest
   - https://github.com/frondeus/test-case
@@ -35,15 +53,7 @@ This workshop is about testing in Rust. We will cover the following topics:
   - proptest
   - mockito (HTTP mocking)
   - https://github.com/alexliesenfeld/httpmock
-- Speeding up tests
-  - Unit tests vs integration tests
-  - Faster integration tests: all in one file
-  - Parallel and sequential tests
-- Test coverage
-- Benchmark tests
-- Structuring code for better testing
-  Onion Architecture / Hexagonal Architecture
-  
+
 
 
 
