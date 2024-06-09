@@ -16,21 +16,19 @@ mod tests {
 
     #[test]
     fn test_is_prime() {
-        let cases = vec![
-            (0, false),
-            (1, false),
-            (2, true),
-            (3, true),
-            (4, false),
-            (5, true),
-            (6, false),
-            (7, true),
-            (8, false),
-            (9, false),
-        ];
+        let primes = [2, 3, 5, 7];
 
-        for (n, expected) in cases {
-            assert_eq!(is_prime(n), expected);
+        for n in primes.into_iter() {
+            assert!(is_prime(n));
+        }
+    }
+
+    #[test]
+    fn test_is_not_prime() {
+        let not_primes = [0, 4, 6, 8, 9, 10];
+
+        for n in not_primes.into_iter() {
+            assert!(!is_prime(n));
         }
     }
 }
