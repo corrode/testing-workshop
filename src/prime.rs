@@ -1,3 +1,13 @@
+/// Check if a number is prime
+///
+/// # Examples
+/// ```
+/// use testing::prime::is_prime;
+/// assert!(!is_prime(0));
+/// assert!(is_prime(2));
+/// assert!(is_prime(3));
+/// assert!(!is_prime(4));
+/// ```
 pub fn is_prime(n: u64) -> bool {
     if n < 2 {
         return false;
