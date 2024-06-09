@@ -9,4 +9,5 @@ rusqlite = { version = "0.31.0", features = ["bundled"] }
 [dev-dependencies]
 assert_cmd = "2.0.14"
 predicates = "3.1.0"
+rstest = "0.21.0"
 tempfile = "3.10.1"
