@@ -1,4 +1,4 @@
-pub fn fibonacci(n: u32) -> u32 {
+pub fn fibonacci(n: u64) -> u64 {
     if n == 0 {
         return 0;
     }

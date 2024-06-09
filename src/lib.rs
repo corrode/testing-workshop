@@ -1,2 +1,2 @@
-mod fibonacci;
-mod prime;
+pub mod fibonacci;
+pub mod prime;
