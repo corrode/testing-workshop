@@ -3,6 +3,7 @@
 ## Exercises
 
 Go to the `src/exercises` module and follow the instructions there.
+You can start with `basic.rs` and then move on to more advanced exercises.
 
 ## Workshop Topics
 
