@@ -18,7 +18,6 @@ fn test_fibonacci_is_prime() {
     ];
 
     for (n, fib, prime) in fib_is_prime.into_iter() {
-        dbg!(n, fib, prime);
         assert_eq!(fibonacci(n), fib);
         assert_eq!(is_prime(fibonacci(n)), prime);
     }

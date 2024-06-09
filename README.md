@@ -33,6 +33,7 @@ This workshop is about testing in Rust. We will cover the following topics:
   - insta (snapshot testing)
   - quickcheck
   - proptest
+  - mockito (HTTP mocking)
   - https://github.com/alexliesenfeld/httpmock
 - Speeding up tests
   - Unit tests vs integration tests
