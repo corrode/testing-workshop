@@ -2,7 +2,7 @@
 ///
 /// # Examples
 /// ```
-/// use testing::prime::is_prime;
+/// # use testing::prime::is_prime;
 /// assert!(!is_prime(0));
 /// assert!(is_prime(2));
 /// assert!(is_prime(3));
