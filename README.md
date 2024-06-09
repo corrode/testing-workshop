@@ -1,5 +1,7 @@
 # Workshop Testing in Rust
 
+![Course Banner](/assets/banner.png)
+
 This is a workshop about testing in Rust. It is intended for people who are already a bit familiar with Rust and want to learn more about testing in Rust.
 
 ## Prerequisites
