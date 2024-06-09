@@ -3,6 +3,8 @@ use std::{
     fmt::{self, Display, Formatter},
 };
 
+pub mod domain;
+
 /// Part 1 about unit testing.
 pub mod fibonacci;
 pub mod prime;
@@ -13,7 +15,7 @@ mod repository;
 pub use repository::user_repository::UserRepository;
 
 #[derive(Debug, PartialEq)]
-enum TestError {
+pub enum TestError {
     Repository(rusqlite::Error),
 }
 

@@ -1,12 +1,14 @@
-mod fake_user_repository;
 pub mod user_repository;
+
+#[cfg(test)]
+pub mod fake_user_repository;
 
 use crate::Result;
 
 /// Repository trait.
 ///
 /// This trait defines the basic operations that a repository should implement.
-trait Repository<T> {
+pub trait Repository<T> {
     /// Get all entities from the repository.
     fn find_all(&self) -> Result<Vec<T>>;
     /// Find an entity by its id.

@@ -5,7 +5,15 @@ use crate::Result;
 
 /// Fake repository for the `User` entity.
 #[cfg(test)]
-struct FakeUserRepository;
+pub struct FakeUserRepository;
+
+#[cfg(test)]
+impl FakeUserRepository {
+    /// Create a new fake user repository.
+    pub fn new() -> Self {
+        FakeUserRepository
+    }
+}
 
 #[cfg(test)]
 impl Repository<User> for FakeUserRepository {

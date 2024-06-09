@@ -68,7 +68,6 @@ mod tests {
             [],
         )
         .unwrap();
-        println!("Table created");
         conn.execute("INSERT INTO person (name) VALUES (?1)", &[&"Alice"])
             .unwrap();
         conn.execute("INSERT INTO person (name) VALUES (?1)", &[&"Bob"])
