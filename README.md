@@ -13,7 +13,7 @@ This is a workshop about testing in Rust. It is intended for people who are alre
 
 ## Slides
 
-Please see the file `Rust Testing Workshop.pdf` in this repository.
+Please see the file [Rust Testing Workshop.pdf][Rust Testing Workshop.pdf] in this repository.
 
 ## Exercises
 
@@ -57,23 +57,7 @@ This workshop is about testing in Rust. We will cover the following topics:
   Onion Architecture / Hexagonal Architecture
 - Test coverage: `cargo tarpaulin --out Html`
 
-## Notable frameworks and libraries
-
-- cargo nextest
-- rstest
-- https://github.com/frondeus/test-case
-- mockall
-- assert_cmd
-- tempdir
-- pretty_assertions
-- insta (snapshot testing)
-- quickcheck
-- proptest
-- mockito (HTTP mocking)
-- https://github.com/alexliesenfeld/httpmock
-- [test-context](https://crates.io/crates/test-context): A library for writing tests with setup and teardown functions.
-
-## Additional notes
+## Running the tests
 
 If you want to run unit tests only, you can use the `--lib` flag:
 
@@ -92,3 +76,19 @@ To run a specific test, you can use the `--test` flag with the test name:
 ```sh
 cargo test --test fibonacci_is_prime
 ```
+
+## Notable frameworks and libraries
+
+- [cargo-nextest](https://nexte.st/): A faster test runner for Rust.
+- [rstest](https://github.com/la10736/rstest): Write parameterized tests in Rust.
+- [test-case](https://github.com/frondeus/test-case): Another parameterized testing library.
+- [mockall](https://github.com/asomers/mockall): Trait-based mocking library.
+- [assert_cmd](https://github.com/assert-rs/assert_cmd): Test command line applications.
+- [tempfile](https://github.com/Stebalien/tempfile): Create temporary files and directories.
+- [pretty_assertions](https://github.com/rust-pretty-assertions/rust-pretty-assertions): Alternative to `assert_eq!` with better diffing and color support. 
+- [insta](https://github.com/mitsuhiko/insta?tab=readme-ov-file): snapshot testing library
+- [quickcheck](https://github.com/BurntSushi/quickcheck): Automated property-based testing with shrinking support.
+- [proptest](https://github.com/proptest-rs/proptest): Another property-based testing library.
+- [mockito](https://github.com/lipanski/mockito): HTTP mocking library
+- [httpmock](https://github.com/alexliesenfeld/httpmock): Another HTTP mocking library
+- [test-context](https://crates.io/crates/test-context): A library for writing tests with setup and teardown functions.
