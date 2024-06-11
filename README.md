@@ -55,7 +55,7 @@ This workshop is about testing in Rust. We will cover the following topics:
 - Benchmark tests
 - Structuring code for better testing
   Onion Architecture / Hexagonal Architecture
-- Test coverage
+- Test coverage: `cargo tarpaulin --out Html`
 
 ## Notable frameworks and libraries
 
@@ -71,8 +71,24 @@ This workshop is about testing in Rust. We will cover the following topics:
 - proptest
 - mockito (HTTP mocking)
 - https://github.com/alexliesenfeld/httpmock
+- [test-context](https://crates.io/crates/test-context): A library for writing tests with setup and teardown functions.
 
+## Additional notes
 
+If you want to run unit tests only, you can use the `--lib` flag:
 
+```sh
+cargo test --lib
+```
 
+To run only the integration tests, you can use the `--test` flag:
 
+```sh
+cargo test --test '*'
+```
+
+To run a specific test, you can use the `--test` flag with the test name:
+
+```sh
+cargo test --test fibonacci_is_prime
+```

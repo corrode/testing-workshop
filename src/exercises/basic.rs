@@ -25,7 +25,7 @@ fn word_to_number(word: &str) -> Result<u64, String> {
 
 #[cfg(test)]
 mod tests {
-    // Test the `is_palindrome` function here.
+    // Test the `is_palindrome` function her.
 
     // Test the `is_in_alphabetical_order` function here.
 
@@ -34,12 +34,15 @@ mod tests {
 
     // Below is a test that currently fails. Ignore it for now.
     #[test]
+    #[ignore]
     fn test_fail() {
-        assert_eq!(1, 2);
+        let foo = "asdf";
+        assert_eq!(1, 2, "This test should fail: {foo}");
     }
 
     // Below is a test which should panic. Test that it does.
     #[test]
+    #[should_panic]
     fn test_panic() {
         panic!("This test should panic");
     }
@@ -69,6 +72,7 @@ mod tests {
 
     // These methos can now be used in tests. Play around with them!
     #[test]
+    #[ignore]
     fn test_foo() {
         todo!()
     }

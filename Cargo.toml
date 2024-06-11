@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 rusqlite = { version = "0.31.0", features = ["bundled"] }
+tokio = { version = "1.38.0", features = ["full"] }
 
 [dev-dependencies]
 assert_cmd = "2.0.14"
