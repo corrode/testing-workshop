@@ -13,7 +13,7 @@ This is a workshop about testing in Rust. It is intended for people who are alre
 
 ## Slides
 
-Please see the file [Rust Testing Workshop.pdf][Rust Testing Workshop.pdf] in this repository.
+Please see the file [Rust Testing Workshop.pdf](Rust Testing Workshop.pdf) in this repository.
 
 ## Exercises
 
