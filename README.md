@@ -77,19 +77,49 @@ To run a specific test, you can use the `--test` flag with the test name:
 cargo test --test fibonacci_is_prime
 ```
 
-## Notable frameworks and libraries
+## Notable Frameworks and Libraries
+
+### Test Runners
 
 - [cargo-nextest](https://nexte.st/): A faster test runner for Rust.
+
+### Parameterized Testing
+
 - [rstest](https://github.com/la10736/rstest): Write parameterized tests in Rust.
 - [test-case](https://github.com/frondeus/test-case): Another parameterized testing library.
-- [mockall](https://github.com/asomers/mockall): Trait-based mocking library.
-- [assert_cmd](https://github.com/assert-rs/assert_cmd): Test command line applications.
-- [tempfile](https://github.com/Stebalien/tempfile): Create temporary files and directories.
-- [pretty_assertions](https://github.com/rust-pretty-assertions/rust-pretty-assertions): Alternative to `assert_eq!` with better diffing and color support. 
-- [insta](https://github.com/mitsuhiko/insta?tab=readme-ov-file): snapshot testing library
+
+### Property-Based Testing
+
 - [quickcheck](https://github.com/BurntSushi/quickcheck): Automated property-based testing with shrinking support.
 - [proptest](https://github.com/proptest-rs/proptest): Another property-based testing library.
-- [mockito](https://github.com/lipanski/mockito): HTTP mocking library
-- [httpmock](https://github.com/alexliesenfeld/httpmock): Another HTTP mocking library
+
+### Mocking and Test Doubles
+
+- [mockall](https://github.com/asomers/mockall): Trait-based mocking library.
+- [mockito](https://github.com/lipanski/mockito): HTTP mocking library.
+- [httpmock](https://github.com/alexliesenfeld/httpmock): Another HTTP mocking library.
+
+### Testing Command Line Applications
+
+- [assert_cmd](https://github.com/assert-rs/assert_cmd): Test command line applications.
+
+### Filesystem and Network Isolation
+
+- [tempfile](https://github.com/Stebalien/tempfile): Create temporary files and directories.
+
+### Testing Snapshots
+
+- [insta](https://github.com/mitsuhiko/insta?tab=readme-ov-file): Snapshot testing library.
+
+### Test Context Management
+
 - [test-context](https://crates.io/crates/test-context): A library for writing tests with setup and teardown functions.
-- [assertor](https://github.com/google/assertor): Fluent assertion library for Rust with readable messages. 
+
+### Little Helpers
+
+- [pretty_assertions](https://github.com/rust-pretty-assertions/rust-pretty-assertions): Alternative to `assert_eq!` with better diffing and color support.
+- [assertor](https://github.com/google/assertor): Fluent assertion library for Rust with readable messages.
+
+### Procedural Macro Testing
+
+- [trybuild](https://crates.io/crates/trybuild): Testing procedural macros.
