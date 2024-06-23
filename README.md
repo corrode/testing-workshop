@@ -111,6 +111,10 @@ cargo test --test fibonacci_is_prime
 
 - [insta](https://github.com/mitsuhiko/insta?tab=readme-ov-file): Snapshot testing library.
 
+### Faking Data
+
+- [fakeit](https://crates.io/crates/fakeit): Fake data generator library with 130+ functions.
+
 ### Test Context Management
 
 - [test-context](https://crates.io/crates/test-context): A library for writing tests with setup and teardown functions.
