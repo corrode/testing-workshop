@@ -92,3 +92,4 @@ cargo test --test fibonacci_is_prime
 - [mockito](https://github.com/lipanski/mockito): HTTP mocking library
 - [httpmock](https://github.com/alexliesenfeld/httpmock): Another HTTP mocking library
 - [test-context](https://crates.io/crates/test-context): A library for writing tests with setup and teardown functions.
+- [assertor](https://github.com/google/assertor): Fluent assertion library for Rust with readable messages. 
