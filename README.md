@@ -93,6 +93,10 @@ cargo test --test fibonacci_is_prime
 - [quickcheck](https://github.com/BurntSushi/quickcheck): Automated property-based testing with shrinking support.
 - [proptest](https://github.com/proptest-rs/proptest): Another property-based testing library.
 
+### Permutation Testing
+
+- [loom](https://crates.io/crates/loom): a testing tool for concurrent code, which runs a test many times, permuting the possible concurrent executions.
+
 ### Mocking and Test Doubles
 
 - [mockall](https://github.com/asomers/mockall): Trait-based mocking library.
