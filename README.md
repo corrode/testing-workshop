@@ -123,6 +123,11 @@ cargo test --test fibonacci_is_prime
 
 - [test-context](https://crates.io/crates/test-context): A library for writing tests with setup and teardown functions.
 
+### Embedded Testing
+
+- [embedded-test](https://github.com/probe-rs/embedded-test): A test harness and runner for embedded devices 
+
+
 ### Little Helpers
 
 - [pretty_assertions](https://github.com/rust-pretty-assertions/rust-pretty-assertions): Alternative to `assert_eq!` with better diffing and color support.
